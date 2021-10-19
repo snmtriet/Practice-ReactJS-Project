@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container__birthday {
+    width: 80%;
+    background-color: #8bc34a;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    flex-direction: column;
+}
+.container__birthday h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+.container__birthday button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #1ee999b8;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.person {
+    width: 80%;
+    display: flex;
+    margin: 1rem 2rem;
+}
+
+.person .person__img {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.person .person__img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.person .person__name {
+    width: 20%;
+    margin: 2rem 0;
+    flex: 1;
+}
+.person .person__age {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    flex: 1.5;
+}
