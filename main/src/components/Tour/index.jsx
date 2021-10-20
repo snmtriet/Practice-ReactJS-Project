@@ -34,6 +34,16 @@ function Tour() {
             </main>
         );
     }
+    if (tours.length === 0) {
+        return (
+            <main>
+                <h3 style={{ textAlign: "center", fontSize: "3rem" }}>0 tours left</h3>\
+                <button style={{ textAlign: "center", fontSize: "3rem" }} onClick={fetchTours}>
+                    Refresh
+                </button>
+            </main>
+        );
+    }
     return (
         <main>
             <FetchTours tours={tours} removeTour={removeTour} />
