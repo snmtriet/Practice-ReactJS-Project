@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Birthday from "./components/Birthday";
+import Tour from "./components/Tour";
+
+const url = "https://course-api.com/react-tours-project";
 
 function App() {
     return (
@@ -32,7 +35,7 @@ function App() {
                         <Birthday />
                     </Route>
                     <Route path="/tour">
-                        <h3>Tour</h3>
+                        <Tour />
                     </Route>
                 </Switch>
             </Router>

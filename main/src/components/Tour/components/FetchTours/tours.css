@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.render__tours {
+    background-color: rgb(145, 145, 172);
+}
+.tour__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.tour__container .tour__img img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tour__container .tour__i4 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem;
+}
+
+.tour__container .tour__i4 h2 {
+    font-size: 3rem;
+}
+
+.tour__container .tour__i4 span {
+    font-size: 2.5rem;
+    color: rgb(107, 32, 32);
+    font-weight: bold;
+}
+
+.tour__container .tour__i4 p {
+    font-size: 1.5rem;
+}
+
+.delete-btn {
+    border: none;
+    padding: 0.5rem;
+    outline: none;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+}
+
+.delete-btn:hover {
+    color: black;
+    background-color: #fff;
+}
+
+.btn-readmore {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.btn-readmore:hover {
+    color: red;
+}
