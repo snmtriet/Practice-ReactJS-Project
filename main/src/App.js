@@ -2,8 +2,7 @@ import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Birthday from "./components/Birthday";
 import Tour from "./components/Tour";
-
-const url = "https://course-api.com/react-tours-project";
+import Reviews from "./components/Reviews/index";
 
 function App() {
     return (
@@ -29,6 +28,11 @@ function App() {
                             Tour
                         </Link>
                     </li>
+                    <li>
+                        <Link style={{ textDecoration: "none" }} to="/reviews">
+                            Reivews
+                        </Link>
+                    </li>
                 </ul>
                 <Switch>
                     <Route path="/birthday">
@@ -36,6 +40,9 @@ function App() {
                     </Route>
                     <Route path="/tour">
                         <Tour />
+                    </Route>
+                    <Route path="/reviews">
+                        <Reviews />
                     </Route>
                 </Switch>
             </Router>
