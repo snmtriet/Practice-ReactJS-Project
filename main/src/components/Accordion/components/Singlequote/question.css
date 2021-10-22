@@ -1,0 +1,14 @@
+.btn__question {
+    border: none;
+    outline: none;
+    padding: 0.1rem 0.2rem;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.btn__question:hover {
+    color: black;
+    background-color: rgb(206, 199, 199);
+}

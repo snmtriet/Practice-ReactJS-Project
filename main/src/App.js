@@ -3,6 +3,7 @@ import "./App.css";
 import Birthday from "./components/Birthday";
 import Tour from "./components/Tour";
 import Reviews from "./components/Reviews/index";
+import Accordion from "./components/Accordion/index";
 
 function App() {
     return (
@@ -33,6 +34,11 @@ function App() {
                             Reivews
                         </Link>
                     </li>
+                    <li>
+                        <Link style={{ textDecoration: "none" }} to="/accordion">
+                            Accordion
+                        </Link>
+                    </li>
                 </ul>
                 <Switch>
                     <Route path="/birthday">
@@ -43,6 +49,9 @@ function App() {
                     </Route>
                     <Route path="/reviews">
                         <Reviews />
+                    </Route>
+                    <Route path="/accordion">
+                        <Accordion />
                     </Route>
                 </Switch>
             </Router>
